@@ -1,0 +1,59 @@
+// spoiler
+.accordion
+  width: 290px
+  background: #fff
+  li
+    display: block
+  [type=radio], [type=checkbox]
+    display: none
+  label
+    display: block
+    position: relative
+    height: 43px
+    box-sizing: border-box
+    line-height: 43px
+    background: #eef6f2
+    color: #006036
+    font-weight: 600
+    cursor: pointer
+    transition: all .2s ease-out
+    border-bottom: 1px solid #cdd5dd
+    svg
+    	fill: #91b4a5
+    	position: absolute
+    	right: 17px
+    	top: 15px
+  ul li label
+  	&:hover
+  		background: #d5e3dd
+  		transition: all .2s ease-in
+  		.pseudo
+  			border: 0
+  		svg
+  			fill: #5f766c
+  .content
+    padding: 0 0 0 35px
+    overflow: hidden
+    overflow-y: hidden
+    color: #006036
+    transition: all .5s ease-out
+    li
+      margin-top: 15px
+      cursor: pointer
+  p
+    margin: 15px 0 0 0
+.vertical
+  ul li
+    overflow: hidden
+    margin-bottom: 1px
+    label
+      padding: 0 0 0 20px
+  [type=radio]:not(:checked) ~ label, [type=checkbox]:not(:checked) ~ label
+    border-bottom: 0
+  ul li
+    .content
+      height: 0px
+      border-top: 0
+  [type=checkbox]:checked ~ label ~ .content
+  	height: 170px
+    min-height: 170px

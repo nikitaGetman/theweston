@@ -1,0 +1,284 @@
+.rb-input
+  position: relative
+  display: block
+  padding-right: 30px
+  min-height: 26px
+  line-height: 26px
+  .rb-input__radio:checked ~ .rb-input__check, &:hover .rb-input__check
+    border: 2px solid #979797
+
+.rb-input__radio
+  position: absolute
+  left: -9999px
+  visibility: hidden
+
+input
+  &[type="checkbox"], &[type="radio"]
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+.rb-input__check
+  content: ''
+  position: absolute
+  top: 6px
+  left: 0
+  width: 30px
+  height: 30px
+  border: 2px solid #979797
+  -webkit-border-radius: 50%
+  border-radius: 50%
+  background: #e1e1e1
+  -webkit-transition: 0.1s
+  -o-transition: 0.1s
+  transition: 0.1s
+  cursor: pointer
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+.modal-rb__inputs--first, .modal-rb__inputs--second
+  display: inline-block
+  vertical-align: top
+.modal-rb__inputs--first
+  margin-right: 30px
+.modal-rb__inputs
+  margin-bottom: 27px
+.rb-image
+  img
+    cursor: pointer
+    margin-left: 31px
+    vertical-align: sub
+    border-radius: 3px
+    width: 29px
+    height: 20px
+
+.rb-image + .rb-input__label
+  padding-left: 11px
+
+.rb-input__radio
+  &:hover + .rb-input__check:after, &:checked + .rb-input__check:after
+    display: block
+
+.rb-input__radio
+  &:checked:hover + .rb-input__check:after
+    top: 3px
+    left: 3px
+    width: 14px
+    height: 14px
+
+.rb-input__radio
+  &:hover + .rb-input__check:after
+    width: 6px
+    height: 6px
+    top: 7px
+    left: 7px
+
+.rb-input__check:after
+  content: ''
+  display: none
+  position: absolute
+  top: 3px
+  left: 3px
+  width: 14px
+  height: 14px
+  -webkit-border-radius: 50%
+  border-radius: 50%
+  background: #4c4c4c
+  -webkit-backface-visibility: hidden
+  -webkit-transform-origin: 100% 100%
+  -ms-transform-origin: 100% 100%
+  transform-origin: 100% 100%
+  -webkit-transition: 0.2s
+  -o-transition: 0.2s
+  transition: 0.2s
+
+.rb-input__label
+  position: relative
+  padding-left: 40px
+  cursor: pointer
+  color: #5b5b5b
+  font-size: 16px
+  line-height: 35px
+  display: inline-block
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+// select
+.cb-input
+  position: relative
+  display: inline-block
+  min-height: 24px
+  line-height: 24px
+.cb-input__wrap
+  display: inline-block
+  max-width: 225px
+  float: right
+  .cb-input__label
+    white-space: normal
+.cb-input--full
+  display: block
+
+.contacts-block__right-sm
+  display: none
+
+.cb-input__checkbox
+  &:not(:checked), &:checked
+    position: absolute
+    left: -9999px
+    visibility: hidden
+
+.cb-input__label
+  display: inline-block
+  padding-left: 25px
+  cursor: pointer
+  line-height: 16px
+  font-size: 12px
+  color: rgba(0, 0, 0, 0.25)
+  white-space: nowrap
+  -webkit-user-select: none
+  -moz-user-select: none
+  -khtml-user-select: none
+  -ms-user-select: none
+  a
+    color: #fff
+    text-decoration: underline
+    opacity: .5
+
+.cb-input__check
+  content: ''
+  position: absolute
+  top: 4px
+  left: 0
+  width: 16px
+  height: 16px
+  border-radius: 2px
+  border: solid 1px rgba(255, 255, 255, 0.5)
+  -webkit-transition: 0.2s
+  -o-transition: 0.2s
+  transition: 0.2s
+  cursor: pointer
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  &:after
+    content: ''
+    position: absolute
+    top: 3px
+    left: 1px
+    width: 12px
+    height: 9px
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    -webkit-transition: .2s
+    -o-transition: .2s
+    transition: .2s
+
+.cb-input:hover .cb-input__check:after
+  background-repeat: no-repeat
+  background-position: center center
+  background: url('data:image/svg+xml;utf8,<svg width="12" height="9" xmlns="http://www.w3.org/2000/svg"><path d="M4.418 6.427L10.722 0 12 1.238 4.386 9 0 4.3l1.308-1.205z" fill="%23FFF" fill-rule="nonzero"/></svg>')
+
+.cb-input__checkbox
+  &:checked + .cb-input__check
+    border-radius: 2px
+    border: solid 1px rgba(255, 255, 255, 0.5)
+    background: transparent
+    &:after
+      background-repeat: no-repeat
+      background-position: center center
+      background: url('data:image/svg+xml;utf8,<svg width="12" height="9" xmlns="http://www.w3.org/2000/svg"><path d="M4.418 6.427L10.722 0 12 1.238 4.386 9 0 4.3l1.308-1.205z" fill="%23FFF" fill-rule="nonzero"/></svg>')
+  &:disabled
+    ~ .cb-input__label
+      cursor: default
+    + .cb-input__check:hover:after
+      border-color: transparent
+  &:not(:checked):disabled
+    + .cb-input__check
+      background: #bec7cc
+      border-color: #bec7cc
+      cursor: default
+    &:hover + .cb-input__check
+      border-color: #bec7cc
+  &:checked:disabled + .cb-input__check
+    background: #bec7cc
+    border-color: #bec7cc
+    cursor: default
+    &:after
+      border-right: 3px solid rgba(0, 0, 0, 0.26)
+      border-bottom: 3px solid rgba(0, 0, 0, 0.26)
+
+.cb-input:hover .cb-input__checkbox:not(:checked):disabled + .cb-input__check:after
+  display: none
+
+.cb-input.parsley-error
+  .cb-input__check
+    border-color: #ea1414
+  .cb-input__label
+    color: #ea1414
+    a
+      color: #ea1414
+
+.cb-input__inverse
+  .cb-input__check
+    border-radius: 2px
+    background-color: transparent
+    border: solid 1px rgba(0, 0, 0, 0.25)
+    width: 16px
+    height: 16px
+    &:hover
+      background: #4c4c4c
+  .cb-input__checkbox:checked + .cb-input__check
+    border: solid 1px rgba(0, 0, 0, 0.25)
+    background: transparent
+    &:after
+      background-repeat: no-repeat
+      background-position: center center
+      background: url('data:image/svg+xml;utf8,<svg width="12" height="9" xmlns="http://www.w3.org/2000/svg"><path d="M4.418 6.427L10.722 0 12 1.238 4.386 9 0 4.3l1.308-1.205z" fill="%23000" fill-rule="nonzero" opacity=".25"/></svg>')
+  .cb-input:hover .cb-input__check:after
+    background-repeat: no-repeat
+    background-position: center center
+    background: url('data:image/svg+xml;utf8,<svg width="12" height="9" xmlns="http://www.w3.org/2000/svg"><path d="M4.418 6.427L10.722 0 12 1.238 4.386 9 0 4.3l1.308-1.205z" fill="%23000" fill-rule="nonzero" opacity=".25"/></svg>')
+  .cb-input__check
+    &:after
+      background-repeat: no-repeat
+      top: 3px
+      left: 1px
+      width: 12px
+      height: 9px
+  .cb-input__checkbox:checked + .cb-input__check:hover::after
+    top: 3px
+    left: 1px
+  .cb-input__label
+    text-decoration: none
+    padding-left: 24px
+    font-size: 12px
+    line-height: 26px
+    color: rgba(0, 0, 0, 0.25)
+    margin-bottom: 5px
+    a
+      color: rgba(0, 0, 0, 0.25)
+      opacity: 1
+
+
+.cb-input__container
+  .txt-input__checkbox
+    display: inline-block
+    margin-right: 4px
+    margin-bottom: 53px
+.cb-input__inverse
+  &.cb-input__big
+    .cb-input__check
+      width: 24px
+      height: 24px
+    .cb-input__label
+      padding-left: 32px
+      line-height: 28px
+.cb-input__inverse.cb-input__big .cb-input__check:after
+  top: 6px
+  left: 5px
+.cb-input__inverse.cb-input__big .cb-input__checkbox:checked + .cb-input__check:hover::after
+  top: 6px
+  left: 5px
+.cb-input__inverse.cb-input__big .cb-input__check
+  background-color: #fff
+.cb-input__inverse.cb-input__big .cb-input__checkbox:checked + .cb-input__check
+  background-color: #fff

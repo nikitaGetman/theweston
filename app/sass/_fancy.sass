@@ -1,0 +1,314 @@
+// fancy
+.popup_header_callback.vancy-modal
+	height: auto
+.popup_header_callback.online-order
+	height: 666px
+.popup_header_callback.read-modal
+	height: 338px
+.fancybox-is-open .fancybox-bg
+	background-color: #1f3965
+	opacity: .8
+.feedback-modal
+	.fancy
+		.fancy-inner
+			h2
+				margin-bottom: 37px
+.popup_header_callback.popup-small
+	height: 602px
+	&.popup_success
+		transition: all .5s ease
+		height: 254px
+.popup_header_callback.popup__img
+	background: transparent
+	width: 765px
+	box-shadow: none
+	padding: 0
+	overflow-x: hidden
+	.form_close
+		right: 168px
+	.fancy
+		padding: 32px 42px 50px 42px
+		box-sizing: border-box
+		max-width: 605px
+		background: #fff
+.fancybox-container
+	z-index: 30
+.feedback-modal
+	.fancy
+		&::before
+			content: ' '
+			position: absolute
+			top: -23px
+			right: calc(50% - 14px)
+			transform: rotate(-90deg)
+			width: 40px
+			height: 82px
+			z-index: 2
+			background-image: url('data:image/svg+xml;utf8,<svg width="28" height="64" viewBox="0 0 28 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 32L35.556 0v64L0 32z" fill="%231f3965cc"/></svg>')
+			background-size: cover
+			background-repeat: no-repeat
+.popup_header_callback
+	display: none
+	width: 1215px
+	border-radius: 5px
+	background-color: #ffffff
+	box-shadow: 0 32px 82px 0 rgba(0, 0, 0, 0.22)
+	height: 565px
+	border-radius: 0
+	box-sizing: border-box
+	padding: 0
+	.box_btn_form.call_btn_box.double-btn-modal
+		.btn
+			width: calc(50% - 8px)
+			margin-right: 12px
+			&:last-child
+				margin-right: 0
+	&.change-pass--modal
+		height: 326px
+		.popup-heading__image
+			bottom: -200px
+	&.resotre-pass--modal
+		height: 436px
+		.popup-heading__image
+			bottom: -105px
+	&.change-data-fiz--modal
+		height: 563px
+	&.change-data-yur--modal
+		height: 665px
+	&.one-click-buy--modal
+		height: 432px
+		.popup-heading__image
+			bottom: -105px
+	&.order-good--modal
+		height: 478px
+		.popup-heading__image
+			bottom: -50px
+	.fancy-inner
+		padding: 36px 42px 33px 83px
+		.modal-order__visible
+			max-width: 402px
+	.fancybox-close-small
+		display: none
+	.cb-input__label
+		a
+			color: #000
+	.txt-input__field
+		color: #000
+		&::placeholder
+			font-size: 18px
+			font-weight: normal
+			color: rgba(0, 0, 0, 0.61)
+	.txt-input__checkbox
+		margin-bottom: 42px
+	.fancy
+		height: 100%
+		background-color: #E5E9F0
+	.box_btn_form.call_btn_box
+		margin-bottom: 25px
+		.btn
+			width: 100%
+			max-width: 100%
+			height: 48px
+			line-height: 48px
+	.popup-heading
+		display: inline-block
+		width: 607px
+		height: 100%
+		float: left
+		position: relative
+		background-color: #fff
+		.popup-heading--logo
+			width: 143px
+			height: 83px
+			position: relative
+			z-index: 1
+			padding-left: 38px
+			padding-top: 41px
+		&__image
+			position: absolute
+			right: 46px
+			bottom: 43px
+			width: 414px
+			height: 474px
+			background-image: url(../images/modal-image.png)
+			background-size: cover
+			background-repeat: no-repeat
+		&__head
+			font-size: 30px
+			// max-width: 285px
+			font-weight: 500
+			line-height: normal
+			margin-bottom: 32px !important	
+			margin: 64px 0 32px 63px
+			color: #000
+		&__text
+			font-size: 24px
+			line-height: 34px
+			font-weight: 300
+			max-width: 300px
+			color: #fff
+			margin: 0 0 40px 63px
+			&:last-child
+				margin-bottom: 0
+		&__info
+			display: block
+			max-width: 370px
+			padding-left: 5px
+			margin-bottom: 35px
+			font-size: 16px
+			line-height: 24px
+	.popup-heading + .fancy-inner
+		display: inline-block
+		min-width: 420px
+		max-width: 550px
+		width: 100%
+		height: 100%
+		box-sizing: border-box
+	&.popup-small
+		.popup-heading
+			background-position: left 260px
+	.form-text__info
+		margin-top: 36px
+		text-align-last: auto
+		span
+			color: #000
+			max-width: 150px
+			font-size: 24px
+			line-height: 34px
+			font-weight: 300
+	.modal-order__success
+		display: none
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="101" height="81" viewBox="0 0 101 81"><path fill="%2349B173" fill-rule="evenodd" d="M0 44.642l35.483 35.506L101 14.693 86.383 0l-50.9 50.874-20.864-20.853z"/></svg>')
+		background-repeat: no-repeat
+		height: 100%
+		padding-top: 50%
+		box-sizing: border-box
+		background-position: left 30%
+		text-align: right		
+		.form-text__info
+			margin-top: 0
+		.btn
+			margin: 35px 0 0 50px
+	.input_block
+		margin-bottom: 32px
+		position: relative
+		.txt-input__label
+			color: #5b5b5b
+	.bootstrap-select
+		width: 100% !important
+		.dropdown-toggle
+			max-width: 421px
+			width: 100%
+			background-color: #fff
+			border-radius: 5px
+			color: #000
+			font-size: 18px
+			height: 48px
+			line-height: 48px
+.fancybox-container
+	cursor: url(../images/cursor-close.png), auto
+.feedback-modal
+	overflow: hidden
+	.fancy
+		.form_close
+			top: 35px
+			right: 36px
+.fancy
+	cursor: auto
+	.modal-span__bold
+		font-size: 17px
+		font-weight: 500
+		display: block
+		margin-bottom: 8px
+	.fancy-inner
+		max-width: 100%
+		margin: 0
+		.modal-text
+			margin-left: 3px
+			p
+				font-size: 16px
+				line-height: 24px
+				font-weight: normal
+		.box_btn_form
+			.btn
+				// width: 180px
+		.list-language
+			margin: 32px 0 32px 0
+		h2
+			font-size: 30px
+			margin: 0 0 32px 0
+	.form_close
+		width: 42px
+		height: 42px
+		display: block
+		z-index: 5
+		position: absolute
+		right: 55px
+		top: 48px
+		text-align: center
+		&:hover
+			transition: all .2s ease
+			path
+				fill: #000
+		.form_close__btn
+			display: inline-block
+			padding-top: 5px
+			padding-left: 2px
+			box-sizing: border-box
+			width: 100%
+			height: 100%
+			svg
+				fill: #000
+				vertical-align: middle
+			&:hover
+				svg
+					path
+						fill: #086cb3
+.fancy-inner
+	position: relative
+	.handle-hide
+		background-color: #e1e1e1
+	.txt-input__textarea
+		height: 80px
+	.txt-input__double
+		margin-bottom: 32px
+		.txt-input
+			border-bottom: 1px solid #C4C7C8
+			margin-bottom: 0
+			&:last-child
+				border-bottom: 0
+	.call_btn_box
+		.txt-input__wrap
+			display: inline-block
+			vertical-align: middle
+		.cb-input
+			max-width: 220px
+			.cb-input__label
+				line-height: 1.33
+				margin-top: 6px
+				white-space: normal
+				a
+					text-decoration: underline
+		.btn
+			max-width: 223px
+			display: inline-block
+			margin-right: 35px
+	.btn
+		width: 100%
+	.txt-input
+		max-width: 421px
+		margin-bottom: 32px
+.menu-modal
+	.fancy .fancy-inner
+		height: 100%
+.menu-modal .header-info
+	bottom: 46px
+.form__success
+	display: none
+	text-align: center
+	font-size: 22px
+	line-height: 24px
+	font-weight: 600
+	color: #F16D6D
+// fancy
+// close

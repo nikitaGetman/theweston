@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<title>TheWeston</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+	<object type="image/svg+xml" data="svg.svg" style="position: absolute;width: 0;height: 0;overflow: hidden;">Your browser does not support SVG</object>
+</head>
+<div id="preload">
+	<div class="preload-container">
+		<div class="gooey">
+		  <span class="dot"></span>
+		  <div class="dots">
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		  </div>
+		</div>
+	</div>
+</div>
+<div class="header-fix-band"></div>
+<header class="header-inner">
+	<div class="header-block">
+		<div class="header-bottom">
+			<div class="logo-container">
+				<div class="logo">
+					<a href="/">
+						<svg class="icon-logo">
+							<use xlink:href="svg.svg#icon-logo"></use>
+						</svg>
+						<img src="images/svg/logo.svg" alt="TheWeston">
+					</a>
+				</div>
+			</div>
+<!-- 			<div class="header-sm">
+				<ul>
+					<li class="header-sm__phone-container">
+						<a href="tel:83912699957" class="header-sm__phone">
+							<svg class="icon-phone-hidden" width='41px' height='33px'>
+								<use xlink:href="svg.svg#icon-phone-hidden"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="header-sm__burger">
+						<a data-fancybox="" data-src="#menu-sm" href="javascript:;">
+							<svg class="icon-burger" width='41px' height='33px'>
+								<use xlink:href="svg.svg#icon-burger"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div> -->
+			<ul class="header-main-links">
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Наши проекты</a></li>
+				<li><a href="#">Блог и статьи</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="contacts.html" class="active">Контакты</a></li>
+			</ul>
+			<div class="header-info">
+				<div class="header-info__links">
+					<a href="#">
+						<svg class="icon-fb" width='14px' height='14px'>
+							<use xlink:href="svg.svg#icon-fb"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="icon-insta" width='14px' height='14px'>
+							<use xlink:href="svg.svg#icon-insta"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="icon-youtube" width='21px' height='14px'>
+							<use xlink:href="svg.svg#icon-youtube"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+	</div>
+	</div>
+</header>
+<body>
+<main>
+	<!-- класс contacts map для страницы контактов -->
+	<div class="footer-container contacts-map">
+		<div class="footer-left">
+			<h1 class="heading-h4 dec-border-left">Контакты</h1>
+			<div class="footer-dec decoration-dots"></div>
+			<div class="footer-contacts">
+				<div class="footer-mail">
+					<svg class="icon-mail" width='21px' height='16px'>
+						<use xlink:href="svg.svg#icon-mail"></use>
+					</svg>
+					<a href="mailto:info@theweston.ru">info@theweston.ru</a>
+				</div>
+				<div class="footer-phone">
+					<svg class="icon-phone" width='20px' height='21px'>
+						<use xlink:href="svg.svg#icon-phone"></use>
+					</svg>
+					<a href="callto:+74950000000">+7 (495) 000 00 00</a>
+				</div>
+				<div class="footer-adress">
+					<svg class="icon-pin-sm" width='19px' height='24px'>
+						<use xlink:href="svg.svg#icon-pin-sm"></use>
+					</svg>
+					<span>Ул. Охотный ряд, д.1  офис 101</span>
+				</div>
+			</div>
+			<div class="footer-soc">
+				<a href="#">
+					<svg class="icon-fb" width='14px' height='14px'>
+						<use xlink:href="svg.svg#icon-fb"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon-insta" width='14px' height='14px'>
+						<use xlink:href="svg.svg#icon-insta"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="icon-youtube" width='21px' height='14px'>
+						<use xlink:href="svg.svg#icon-youtube"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="footer-copyright">
+				<span class="footer-copyright__author">
+					Created & provide by 
+					<img src="images/scripta.png" alt="Scripta Logo">
+				</span>
+				<span class="footer-copyright__text">Все права защищены The Weston (с) 2019</span>
+			</div>
+		</div>
+
+		<div class="footer-right">
+			<script>
+				function initMap() {
+				    var mapOptions = {
+				        scrollwheel: false,
+				        zoom: window.outerWidth < 950 ? 17 : 17,
+				        disableDefaultUI: true,
+				        zoomControl: true,
+				        center: new google.maps.LatLng(53.5267409, 92.2683035, 7),
+				        styles: [
+								  {
+								    "elementType": "geometry",
+								    "stylers": [
+								      {
+								        "color": "#1d2c4d"
+								      }
+								    ]
+								  },
+								  {
+								    "elementType": "labels.text.fill",
+								    "stylers": [
+								      {
+								        "color": "#8ec3b9"
+								      }
+								    ]
+								  },
+								  {
+								    "elementType": "labels.text.stroke",
+								    "stylers": [
+								      {
+								        "color": "#1a3646"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "administrative.country",
+								    "elementType": "geometry.stroke",
+								    "stylers": [
+								      {
+								        "color": "#4b6878"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "administrative.land_parcel",
+								    "elementType": "labels.text.fill",
+								    "stylers": [
+								      {
+								        "color": "#64779e"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "administrative.province",
+								    "elementType": "geometry.stroke",
+								    "stylers": [
+								      {
+								        "color": "#4b6878"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "landscape.man_made",
+								    "elementType": "geometry.stroke",
+								    "stylers": [
+								      {
+								        "color": "#334e87"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "landscape.natural",
+								    "elementType": "geometry",
+								    "stylers": [
+								      {
+								        "color": "#023e58"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "poi",
+								    "elementType": "geometry",
+								    "stylers": [
+								      {
+								        "color": "#283d6a"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "poi",
+								    "elementType": "labels.text.fill",
+								    "stylers": [
+								      {
+								        "color": "#6f9ba5"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "poi",
+								    "elementType": "labels.text.stroke",
+								    "stylers": [
+								      {
+								        "color": "#1d2c4d"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "poi.park",
+								    "elementType": "geometry.fill",
+								    "stylers": [
+								      {
+								        "color": "#023e58"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "poi.park",
+								    "elementType": "labels.text.fill",
+								    "stylers": [
+								      {
+								        "color": "#3C7680"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "road",
+								    "elementType": "geometry",
+								    "stylers": [
+								      {
+								        "color": "#304a7d"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "road",
+								    "elementType": "labels.text.fill",
+								    "stylers": [
+								      {
+								        "color": "#98a5be"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "road",
+								    "elementType": "labels.text.stroke",
+								    "stylers": [
+								      {
+								        "color": "#1d2c4d"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "road.highway",
+								    "elementType": "geometry",
+								    "stylers": [
+								      {
+								        "color": "#2c6675"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "road.highway",
+								    "elementType": "geometry.stroke",
+								    "stylers": [
+								      {
+								        "color": "#255763"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "road.highway",
+								    "elementType": "labels.text.fill",
+								    "stylers": [
+								      {
+								        "color": "#b0d5ce"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "road.highway",
+								    "elementType": "labels.text.stroke",
+								    "stylers": [
+								      {
+								        "color": "#023e58"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "transit",
+								    "elementType": "labels.text.fill",
+								    "stylers": [
+								      {
+								        "color": "#98a5be"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "transit",
+								    "elementType": "labels.text.stroke",
+								    "stylers": [
+								      {
+								        "color": "#1d2c4d"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "transit.line",
+								    "elementType": "geometry.fill",
+								    "stylers": [
+								      {
+								        "color": "#283d6a"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "transit.station",
+								    "elementType": "geometry",
+								    "stylers": [
+								      {
+								        "color": "#3a4762"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "water",
+								    "elementType": "geometry",
+								    "stylers": [
+								      {
+								        "color": "#0e1626"
+								      }
+								    ]
+								  },
+								  {
+								    "featureType": "water",
+								    "elementType": "labels.text.fill",
+								    "stylers": [
+								      {
+								        "color": "#4e6d70"
+								      }
+								    ]
+								  }
+								]
+				    };
+				    var mapElement = document.getElementById('map');
+				    var map = new google.maps.Map(mapElement, mapOptions);
+				    var image = 'images/map-pin.png';
+				    var marker = new google.maps.Marker({
+				        position: new google.maps.LatLng(53.337199, 91.9334697, 7),
+				        map: map,
+				        // icon: image,
+				        title: ''
+				    });
+				}
+
+			</script>
+			<div class="container-map">
+				<div id="map" class="map"></div>
+			</div>
+		</div>
+	</div>
+</main>
+</body>
+<footer>
+</footer>
+<!-- скрипт карты -->
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXjBNHEOJ1iVikr076vYZJQ5M4PYJKN0E&callback=initMap"></script>
+</html>

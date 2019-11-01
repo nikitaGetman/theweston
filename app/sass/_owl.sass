@@ -1,0 +1,126 @@
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item
+	-ms-touch-action: auto
+	touch-action: auto
+.slide-photo
+	.cart-container
+		max-width: 368px
+		height: 300px
+		.cart-img
+			cursor: pointer
+			max-width: 368px
+			height: 300px
+.cart-block__first-slide
+	margin-bottom: 69px
+	position: relative
+	a
+		&:hover
+			h2
+				color: #e33039
+.owl-theme.owl-button-change
+	.owl-nav
+		button
+			width: 45px
+			height: 45px
+			font-size: 0
+			// margin: 0 42px 0 0
+			outline: none
+			background-color: transparent
+			transition: all .2s ease-out
+			&:hover
+				background: transparent
+				opacity: .6
+				// margin-top: -5px
+				transition: all .2s ease-in
+			span
+				display: block
+				height: 100%
+				background-image: url(../images/arrow-slide.png)
+				background-repeat: no-repeat
+				background-position: 50% 50%					
+			&.owl-prev
+				span
+					transform: rotate(180deg)
+.slider-block__inner .owl-theme .owl-dots .owl-dot
+	span
+		width: 8px
+		height: 8px
+		margin: 2px 4px
+		background: #8a8a8a
+	&.active span
+		background: #000
+	&:nth-child(n + 5)
+		display: none
+.slider-block .owl-carousel.owl-theme .owl-nav
+	position: absolute
+	display: inline-block
+	width: auto
+	left: 335px
+	top: -148px
+.main-slide__slider
+	.owl-theme .owl-nav
+		
+.slider-block .owl-theme .owl-nav
+	display: block
+	span
+		display: none
+	[class*=owl-]
+		transition: all .2s ease-out
+		&:hover
+			opacity: .5
+			background-color: transparent
+			transition: all .2s ease-in
+	[class*=owl-prev]
+		width: 63px
+		height: 63px
+		display: inline-block
+		cursor: pointer
+		background-image: url(../images/svg/left-arrow-slider.svg)
+		display: inline-block
+		border-radius: 5px
+		border: solid 1px rgba(0, 0, 0, 0.28)
+		background-repeat: no-repeat
+		background-size: 23px 14px
+		background-position: 50% 50%
+		transform: rotate(180deg)
+		&:focus
+			outline: none
+	[class*=owl-next]
+		width: 118px
+		height: 63px
+		display: inline-block
+		cursor: pointer
+		background-image: url(../images/svg/left-arrow-slider.svg)
+		display: inline-block
+		border-radius: 5px
+		border: solid 1px rgba(0, 0, 0, 0.28)
+		background-repeat: no-repeat
+		background-size: 23px 14px
+		background-position: 50%
+		&:focus
+			outline: none
+.slider-block__sm .owl-theme .owl-nav [class*=owl-prev]
+	right: 47px
+	left: auto
+.slider-block__sm
+	width: 360px
+	height: 90px
+	.owl-theme .owl-nav
+		[class*=owl-]
+			width: 36px
+			height: 36px
+	.owl-carousel
+		width: 360px
+		height: 80px
+.slider-images__sm
+	.owl-nav
+		bottom: 60px
+	.item
+		max-height: 55px
+		padding-left: 30px
+		margin: 0
+		width: 100%
+		max-width: 240px
+		font-weight: 700
+		line-height: 55px
+.slider-block__sm .owl-carousel .owl-item
+		border-bottom: 1px solid #cdd5dd

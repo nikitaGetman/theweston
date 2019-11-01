@@ -1,0 +1,826 @@
+.fancybox-slide > .popup-basket
+  position: absolute
+  right: 0
+.popup-basket
+  .txt-input__checkbox
+    margin-bottom: 0
+  .txt-input__textarea
+    height: 92px
+  .cb-input__label a
+    color: #fff
+  .input_block
+    height: 70px
+    .txt-input__label
+      top: 0
+      left: 26px
+      z-index: 2
+  .bootstrap-select .dropdown-toggle
+    height: 70px
+    line-height: 80px
+.popup-basket .fancy-inner .txt-input, .popup_header_callback.popup-basket .bootstrap-select .dropdown-toggle
+  max-width: 100%
+.basket-inner .content, .basket-order
+  &::-webkit-scrollbar
+    display: none
+  scrollbar-width: none
+  -ms-overflow-style: none
+  max-height: calc(100vh - 180px)
+  .simplebar-track.horizontal
+    display: none
+.tabs-form.basket-tabs
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-direction: column
+  align-items: center
+.form-order--first,.form-order--second
+  width: 100%
+  max-width: 534px
+  padding-bottom: 63px
+  box-sizing: border-box
+  display: none
+.form-order--first.active,.form-order--second.active
+  display: block
+.basket-tabs
+  .tabs-form__inner
+    display: block
+  ul.tabs-form__inner li
+    max-width: 200px
+    overflow: hidden
+    margin-right: 30px
+    font-size: 16px
+    font-weight: 500
+    line-height: 24px
+    margin-top: 0
+    letter-spacing: normal
+    text-align: center
+    color: #fff
+    &:hover
+      span
+        // padding-bottom: 3px
+    &.active
+      span
+        // padding-bottom: 3px
+    span
+      display: block
+      white-space: nowrap
+      padding-bottom: 9px
+  li:last-child
+    margin-right: 0
+
+.tabs-form__inner
+  display: inline-block
+  > div
+    padding-top: 10px
+    color: #fff
+
+.basket-order
+  .form-btn
+    height: 60px
+    line-height: 60px
+    margin-bottom: 14px
+  .tabs-form__inner
+    margin-bottom: 34px
+
+.tabs-form__inner
+  margin: 0px
+  padding: 0px
+  font-size: 0
+  &:after
+    content: ""
+    display: block
+    clear: both
+  li
+    &:after
+      content: ""
+      display: block
+      clear: both
+      background-color: #fff
+      border: 1px solid #ffffff
+      opacity: .5
+    margin: 0px
+    padding: 0px
+    cursor: pointer
+    display: block
+    transition: all .2s ease-out
+    box-sizing: border-box
+    float: left
+    background: transparent
+    color: #000
+    margin-top: 6px
+    &.active:after
+      border: 4px solid #fff
+      margin-top: -6px
+      opacity: 1
+    &:hover
+      margin-top: -6px
+    &.active
+      margin-top: -6px
+      &:hover:after
+        border: 4px solid #fff
+        margin-top: -6px
+        opacity: 1
+    &:hover:after
+      transition: all .2s ease-in
+      border: 4px solid #ffffff
+      margin-top: -6px
+      opacity: .5
+.popup-basket
+  width: 100%
+  max-width: 1180px
+  height: 100%
+  // padding: 42px 24px 0 32px
+  margin: 0
+  margin-left: 200px
+  background: #e6e8db
+  h2
+    &:first-child
+      margin-top: -10px
+      color: #000
+    margin: 0 0 41px 0
+  .fancy
+    background-color: #93a6c5
+  .fancy-inner
+    max-width: 100%
+    height: 100%
+    padding: 59px 60px 43px 36px
+    box-sizing: border-box
+.basket-inner--switch
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  justify-content: center
+  margin-bottom: 46px
+  .basket-switch__link
+    display: inline-block
+    padding: 0 20px
+    height: 46px
+    line-height: 46px
+    font-size: 20px
+    font-weight: 500
+    color: #fff
+    margin-right: 24px
+    box-sizing: border-box
+    border-radius: 23px
+    &:last-child
+      margin-right: 0
+  .basket-switch__link
+    &.active, &:hover
+      background-color: #455e89
+.basket-inner__success
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -261px
+  margin-top: -179px
+  display: none
+  width: 524px
+  height: 378px
+  background: url(../images/basket-success.png)
+  background-repeat: no-repeat
+  -webkit-background-size: contain
+  background-size: contain
+  background-position: center center
+.popup-basket.popup-basket-empty
+  max-width: 402px !important
+  .basket-inner, .basket-info__inner
+    display: none
+.popup-basket
+  .txt-input__field
+    width: 100%
+  .txt-input
+    margin-bottom: 32px
+  &.active
+    // .basket-inner__card
+    //   max-width: 533px
+    //   height: 123px
+    // .bakset-inner__info
+    //   margin-top: -20px
+    // .basket-inner__card
+    //   .bakset-inner__heading h4
+    //     height: 49px
+    //     margin-bottom: 14px
+    //   .basket-summ
+    //     float: none
+    //     margin-right: 0
+    //     display: block
+    //     .shop-price-small-right
+    //       float: right
+    //       margin-right: 16px
+    //       margin-top: 6px
+    //       &:first-child
+    //         float: none
+    max-width: 1180px
+  &.success
+    max-width: 100%
+    .basket-inner, .basket-info, ._H-h2-left
+      display: none
+
+.slider-cart a.photo-link
+  width: 100%
+  height: 100%
+
+.popup-basket.success
+  background: #fff
+
+.basket-inner__success
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -261px
+  margin-top: -179px
+  display: none
+  width: 524px
+  height: 378px
+  background: url(../images/basket-success.png)
+  background-repeat: no-repeat
+  -webkit-background-size: contain
+  background-size: contain
+  background-position: center center
+
+.popup-basket .basket-inner__success
+  h2
+    font-size: 36px
+    font-weight: 500
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #000000
+    margin: 140px 0 24px 0
+  p
+    font-size: 16px
+    white-space: nowrap
+    line-height: 1.5
+    color: #000000
+    margin: 0 0 48px 0
+
+.popup-search .basket-inner__success .btn
+  display: block
+  margin: auto
+.basket-inner
+  // max-height: 800px
+  max-width: 728px
+  overflow-y: auto
+  .basket-order
+    display: none
+
+
+.basket-inner__card
+  width: 100%
+  max-width: 704px
+  height: 192px
+  background: #fff
+  padding: 20px 17px 28px 17px
+  box-sizing: border-box
+  margin-bottom: 8px
+  position: relative
+  .bakset-inner__heading
+    padding: 8px 0 0 0
+    display: block
+    vertical-align: top
+
+.popup-basket.active .basket-inner__card .basket-availability
+  display: none
+
+.basket-inner__card
+  .basket-availability
+    font-size: 14px
+    line-height: 21px
+    margin-top: 7px
+    color: #8a8a8a
+    display: inline-block
+    margin-right: 60px
+  .basket-summ .basket-counter
+    width: 152px
+    height: 34px
+    border-radius: 5px
+    line-height: 30px
+    text-align: center
+    padding: 0
+    float: right
+    vertical-align: middle
+    box-sizing: border-box
+    background: #ededed
+    display: inline-block
+    margin: 0 0 0 10px
+    svg
+      vertical-align: middle
+    .basket-counter__summ
+      display: inline-block
+      width: calc(100% - 68px)
+      line-height: 32px
+      vertical-align: top
+
+.summ-price.shop-price-small-right
+  float: right
+  margin-top: 5px
+
+.basket-inner__card
+  .basket-summ .basket-counter
+    .basket-counter__minus, .basket-counter__plus
+      display: inline-block
+      width: 34px
+      height: 34px
+      box-sizing: border-box
+      border: solid 1px #b8b8b8
+      border-radius: 5px
+      background-color: #fff
+      vertical-align: top
+      cursor: pointer
+    .basket-counter__minus
+      margin-right: -4px
+    .basket-counter__plus
+      float: right
+  .basket-delete__btn
+    position: absolute
+    right: 7px
+    top: 7px
+    cursor: pointer
+    &:hover svg
+      fill: #007ca1
+  .basket-summ
+    margin-right: 23px
+    overflow: hidden
+    .shop-price-small-right,.shop-price-small-old-right
+      display: inline-block
+      margin-top: 6px
+    .shop-price-small-old-right
+      margin-left: 26px
+
+.overflow
+  overflow-x: hidden
+  overflow-y: scroll
+  background: gray
+  color: white
+  width: 100%
+  height: 200px
+  position: relative
+  -webkit-overflow-scrolling: touch
+
+.thumb
+  transition: .3s ease
+  width: 12px
+  background: red
+
+.basket-tabs
+  // max-height: 700px
+  overflow-y: auto
+
+.basket-inner__card
+  .basket-summ .item-price
+    display: inline-block
+  .bakset-inner__heading h4
+    margin: 0
+    height: 48px
+    font-size: 18px
+    color: #007ca1
+    max-width: 63%
+    text-overflow: ellipsis
+    overflow: hidden
+    margin-bottom: 15px
+  .basket-charactheristic
+    margin-bottom: 24px
+    &__text
+      font-size: 18px
+      line-height: 24px
+.popup-basket-empty .basket-empty
+  display: block
+.basket-empty
+  display: none
+  max-width: 170px
+  margin: auto
+  position: absolute
+  left: 50%
+  text-align: center
+  margin-left: -85px
+  top: 40%
+  font-size: 20px
+  font-weight: 500
+  color: #000
+.basket-info
+  width: 402px
+  position: absolute
+  top: 0
+  right: 0
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  z-index: 0
+  padding: 173px 0 62px 0
+  background: #fff
+  height: 100%
+  transition: all .3s ease
+  display: inline-block
+  &__footer
+    width: 100%
+    margin: auto
+    text-align: center
+    position: absolute
+    bottom: 43px
+    .basket-info__info
+      color: #525252
+      font-size: 14px
+      line-height: 21px
+      margin-bottom: 23px
+      a
+        display: block
+        line-height: 21px
+        font-size: 14px
+        color: #525252
+    .basket-info__link
+      color: #5479b8
+  &.active .basket-info__inner .btn
+    display: none
+  .basket-order h2
+    position: absolute
+    left: 32px
+    top: 45px
+  .txt-input__field
+    font-size: 18px
+    line-height: 22px
+  .txt-input__textarea
+    height: 79px
+    font-size: 18px
+    margin-bottom: 0
+    padding-top: 15px
+
+.fancy-inner .basket-info .txt-input .txt-input__textarea
+  margin-bottom: 0
+
+.bootstrap-select
+  width: 100% !important
+.txt-input__field--quantity
+  height: 32px
+  width: auto
+  padding: 0
+  margin-left: -8px
+  font-size: 20px
+  border-width: 0
+  background-color: inherit
+  text-align: center
+  box-shadow: none
+  font-weight: 500
+  max-width: 30px
+  line-height: 32px
+  &.is-active
+    height: 32px
+    width: auto
+    padding: 0
+    border-width: 0
+    background-color: inherit
+    text-align: center
+    max-width: 30px
+    line-height: 32px
+
+.basket-counter .txt-input__field
+  background-color: transparent
+.basket-info
+  .btn
+    width: 100%
+    border-radius: 3px
+    margin-left: 0
+  .form-btn
+    width: 376px
+    max-width: 376px
+    margin-top: 20px
+    margin-bottom: 16px
+    border-radius: 3px
+    margin-left: 0
+  .cb-input__label
+    white-space: normal
+    font-size: 12px
+    line-height: 16px
+    margin-top: 6px
+  &.active
+    // width: 730px
+  .basket-info__inner
+    color: #525252
+    width: 277px
+    font-size: 14px
+    float: right
+    margin-right: 56px
+  .basket-info__cost span, .basket-info__discount span
+    width: 117px
+    display: inline-block
+    margin-right: 17px
+    text-align: left
+    // white-space: nowrap
+  .basket-sale--info
+    margin-bottom: 21px
+  .sale--info__text
+    display: block
+    max-width: 277px
+    font-size: 15px
+    line-height: 24px
+    color: #ff3842
+  .basket-info__total span
+    width: 65px
+    display: inline-block
+    margin-right: 17px
+    text-align: left
+  .basket-info__discount span._Secondary_text-service-ok-left
+    width: auto
+  .basket-info__cost span.right, .basket-info__discount span.right, .basket-info__total span.right, .basket-info__delivery span.right, .basket-info__weight span.right
+    width: auto
+    margin-right: 0
+    max-width: 120px
+    text-align: right
+    word-break: break-all
+    display: inline
+    float: right
+  .basket-info__cost, .basket-info__discount, .basket-info__delivery
+    margin-bottom: 4px
+    padding-bottom: 4px
+    box-sizing: border-box
+    overflow: hidden
+  .basket-info__total
+    margin-top: 28px
+    margin-bottom: 22px
+  .basket-info__inner > a
+    display: inline-block
+
+.basket-info__inner .btn
+  width: 216px
+  max-width: 100%
+  margin-bottom: 24px
+  margin-left: 0
+.basket-info__inner .btn.btn-modal
+  width: 100%
+  max-width: 100%
+  height: 60px
+  line-height: 60px
+  font-size: 16px
+  border-radius: 0
+  background-color: #5479b8
+  font-weight: 500
+  color: #fff
+  margin-bottom: 24px
+  margin-left: 0
+
+.basket-info .basket-info__inner a.condition
+  right: 48px
+  display: inline-block
+  width: 216px
+  text-align: center
+  position: absolute
+  bottom: 40px
+  color: #525252
+  font-weight: normal
+  font-size: 14px
+
+.summ-price
+  color: #000
+
+.basket-inner__card .bakset-inner__img
+  width: 140px
+  height: 121px
+  background-repeat: no-repeat
+  -webkit-background-size: contain
+  background-size: contain
+  background-position: center center
+  margin-right: 7px
+  float: left
+  display: inline-block
+
+.popup-basket
+  h2
+    margin: 0 0 41px 0
+  &.active
+    margin-left: -385px
+  .txt-input
+    display: block
+  .basket__rb-input
+    margin-top: 20px
+  .rb-input
+    margin-top: 12px
+@media screen and (min-height: 1200px)
+  .basket-tabs div div
+    max-height: 100%
+@media screen and (max-width: 1366px) and (min-width: 1000px)
+  // .basket-inner__card .basket-availability
+  //   margin-right: 30px
+  // // .basket-inner
+  // //   max-height: 500px
+  // //   overflow-y: auto
+  // .popup-basket
+  //   &.active
+  //     .basket-inner__card
+  //       max-width: 395px
+  //     .bakset-inner__info
+  //       margin-top: -20px
+  //   .txt-input .placeholder
+  //     font-size: 16px
+  // .basket-inner__card .basket-summ .basket-counter
+  //   margin: 0 30px 0 0
+  // .basket-tabs ul li
+  //   width: 109px
+  // .basket-info.active
+  //   // width: 550px
+  // .basket-inner__card
+  //   .basket-summ .shop-price-small-right:first-child
+  //     display: none
+  //   .bakset-inner__heading h4
+  //     max-width: 63%
+  //     white-space: nowrap
+  //     text-overflow: ellipsis
+  //     overflow: hidden
+  // .basket-tabs
+  //   // max-height: 500px
+  //   // width: 230px
+  //   ul li
+  //     // margin-right: 11px
+  // .fancy-inner .input_block .dropdown-toggle, .basket-info .form-btn
+  //   width: 100%
+  //   max-width: 100%
+  // .basket-inner__card
+  //   max-width: 705px
+  // .popup-basket.active .basket-inner__card
+  //   max-width: 47vw
+// @media screen and (max-width: 1150px)
+//   .popup-basket.active .basket-inner__card
+//     max-width: 41vw
+@media screen and (max-width: 1000px) and (min-width: 320px)
+  .basket-info
+    width: 100%
+    bottom: 0
+    left: 0
+    top: initial
+    padding: 24px 0 30px 0
+    height: 656px
+  .bootstrap-select.btn-group .dropdown-toggle .filter-option
+    padding-left: 8px
+  .basket-tabs div div.select
+    max-width: 280px
+  .popup-search.popup-basket .txt-input
+    width: auto
+  .basket-info .basket-info__inner
+    max-width: 344px
+    margin: auto
+    padding: 0 0 26px 0
+    box-sizing: border-box
+    background: #fff
+    float: none
+    text-align: center
+  .basket-inner__card
+    .basket-availability
+      display: none
+    .bakset-inner__heading
+      display: inline-block
+  .popup-basket
+    h2
+      font-size: 24px
+      margin: 0 0 24px 0
+      &:first-child
+        margin-top: 10px
+    .btn + .txt-input__wrap
+      background: #fff
+      text-align: center
+      height: 55px
+      .cb-input__check
+        top: 18px
+  .fancy-inner .input_block .dropdown-toggle
+    max-width: 100%
+    width: 100%
+  .popup-basket .btn + .txt-input__wrap .cb-input
+    line-height: 50px
+  .basket-info .basket-info__total, .basket-info__discount, .basket-info__cost, .basket-info__delivery, .basket-info__weight
+    text-align: left
+  .basket-inner__card .basket-summ
+    float: none
+    display: block
+    .basket-counter
+      float: left
+      padding: 0 13px 0 9px
+      margin-left: 9px
+  .basket-inner
+    max-height: 260px
+    overflow-y: auto
+  .basket-info .basket-info__inner a.condition
+    position: inherit
+    display: none
+    margin-top: 20px
+  .popup-basket
+    label.txt-input
+      margin-top: 20px
+      margin-bottom: 0
+    .btn
+      margin: 24px 0 0 0 !important
+  .popup-search
+    .basket-inner__success .btn
+      display: block
+      margin: auto !important
+    &.popup-search__left
+      width: 100%
+  .popup-basket .txt-input__label
+    display: none
+  .sort-select .input_block
+    width: auto
+    margin-top: 0
+  .input_block
+    position: relative
+  .basket-tabs .input_block
+    height: 48px
+    margin-top: 20px
+    overflow-y: inherit
+  .popup-basket .basket-tabs
+    .btn
+      margin: 0 !important
+    .form-btn
+      margin-top: 24px !important
+      max-width: 100%
+  .basket-inner__card
+    .bakset-inner__heading h4
+      max-width: 250px
+      white-space: normal
+      text-overflow: ellipsis
+      overflow: hidden
+    .bakset-inner__img
+      width: 75px
+      float: none
+      height: 73px
+  .popup-search .fancy-inner
+    max-width: 100%
+  .popup-basket
+    padding: 20px 33px 0 33px
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    margin: 0
+    margin-left: 0
+  .basket-inner__card
+    height: 135px
+    max-width: 100% !important
+  .popup-basket.active
+    margin-left: 0
+  .basket-info.active
+    width: 100%
+  .basket-tabs
+    max-height: 100%
+    width: auto
+    max-width: 280px
+    margin: auto
+    float: none
+    padding: 0
+    text-align: center
+    background: #fff
+    box-sizing: border-box
+  .basket-order
+    background-color: #fff
+  .basket-info .basket-order h2
+    margin-top: 0
+    position: inherit
+  .basket-tabs ul li
+    width: 46%
+  .basket-info .cb-input__label
+    white-space: normal
+  .basket-order .tabs-form__inner
+    height: 32px
+    margin-bottom: 5px
+  // .basket-tabs div div:last-child
+  //   max-height: 100%
+  //   overflow-y: inherit
+
+@media screen and (max-width: 400px) and (min-width: 320px)
+  .basket-inner__card .bakset-inner__heading h4
+    max-width: 150px
+
+@media screen and (max-width: 600px)
+  .popup-basket.active .basket-inner__card .bakset-inner__heading h4
+    height: 41px
+  .basket-inner__success
+    left: initial
+    margin-left: 0
+    width: 100%
+  .popup-basket
+    .basket-inner__success p
+      max-width: 320px
+      text-align: center
+      white-space: normal
+      margin: auto
+      margin-bottom: 48px
+    &.success
+      padding: 0
+
+@media screen and (max-width: 370px) and (min-width: 320px)
+  .cart-basket
+    margin: 15px 0 0 0
+  .cart-add__block
+    float: none
+  .cart-buy
+    width: 100%
+    margin: 10px 0 0 0
+  .cart-info
+    .cart-count__color, .cart-count__color-bad
+      display: none
+  .popup-basket .btn + .txt-input__wrap .cb-input__check
+    top: 15px
+  .basket-info .cb-input__label
+    white-space: normal
+    line-height: normal
+    margin-top: 11px

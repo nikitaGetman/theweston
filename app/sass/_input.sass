@@ -1,0 +1,333 @@
+.txt-input
+  position: relative
+  display: block
+  .placeholder-input
+    color: rgba(255, 255, 255, 0.61)
+    position: absolute
+    top: 0
+    font-size: 18px
+    cursor: text
+    white-space: nowrap
+    right: 24px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    line-height: 48px
+    display: none !important
+    transition: all 0.3s ease
+  input.parsley-success ~ .placeholder-input
+    transform: translate(-5px, -12px) scale(1)
+    font-size: 12px
+    color: #2c870c
+    right: 4px
+    display: inline-block
+.txt-input__label
+  position: absolute
+  top: -24px
+  font-size: 12px
+  line-height: 1.83
+  color: #ffffff
+.txt-input.txt-input__double
+  .txt-input__wrap
+    display: inline-block
+  .txt-input__wrap--first
+    width: 100%
+    max-width: calc(100% - 120px)
+    .txt-input__field
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+  .txt-input__wrap--second
+    margin-left: -4px
+    max-width: 120px
+    .txt-input__field
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+.txt-input__wrap
+  position: relative
+
+.txt-input__field::placeholder
+  color: rgba(0, 0, 0, 0.61)
+  font-size: 18px
+.input-clear
+  width: 16px
+  height: 16px
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%238A8A8A" fill-rule="evenodd" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm4 11.05l-1.12 1.185L8 9.185l-2.88 3.05L4 11.05 6.88 8 4 4.95l1.12-1.185L8 6.815l2.88-3.05L12 4.95 9.12 8 12 11.05z"/></svg>')
+  background-repeat: no-repeat
+  position: absolute
+  right: 16px
+  top: 28px
+  visibility: hidden
+  opacity: 0
+  transition: all .2s ease-out
+.fancybox-inner .txt-input__field
+  background-color: #fff
+.txt-input__field
+  position: relative
+  width: 100%
+  border: 0
+  border-radius: 5px
+  height: 70px
+  color: rgba(0, 0, 0, 0.61)
+  font-family: 'Montserrat', sans-serif
+  font-size: 18px
+  outline: none
+  padding-left: 26px
+  background-color: #fff
+  display: inline-block
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2)
+  box-sizing: border-box
+  &.parsley-error
+    border: solid 2px #ea1414
+  &:hover, &.is-active
+.txt-input__double
+  .txt-input
+    margin-bottom: -1px !important
+    border-bottom: 1px solid #C4C7C8
+    &:last-child
+      border-bottom: 0
+    &:last-child.parlsey-error
+        &:focus
+          border-bottom: 2px solid #ea1414 !important
+    &:first-child
+      .txt-input__field
+        border-bottom-right-radius: 0px
+        border-bottom-left-radius: 0px
+    &:last-child
+      .txt-input__field
+        border-top-right-radius: 0px
+        border-top-left-radius: 0px
+        border-bottom: 0
+  .txt-input__field
+    border-bottom: 1px solid #C4C7C8
+.txt-input__secondary
+  background: transparent
+  color: rgba(255, 255, 255, 0.61)
+  font-size: 18px
+  border-radius: 32px
+  font-weight: 300
+  border: 1px solid #fff
+
+.txt-input__field:focus, .txt-input__textarea:focus
+  // border: 2px solid #848484
+
+.txt-input__field.parsley-error:focus, .txt-input__textarea.parsley-error:focus
+  border: 2px solid #ea1414 !important
+  box-shadow: none
+
+#search .txt-input__field, .callback-form__inner .input-error
+  box-shadow: none
+
+.txt-input.is-active .input-clear
+  opacity: 1
+  visibility: visible
+\::-webkit-resizer
+  background-color: transparent
+.txt-input__textarea
+  position: relative
+  width: 100%
+  border: 0
+  resize: vertical
+  height: 110px
+  color: #626262
+  font-size: 18px
+  padding-top: 25px
+  outline: none
+  padding-left: 25px
+  background-color: #ffffff
+  display: inline-block
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  background-image: url(../images/text-area.png)
+  background-repeat: no-repeat
+  -webkit-background-size: contain
+  background-size: contain
+  -webkit-background-size: 11px 11px
+  background-size: 11px 11px
+  background-position: 98% 95%
+  &::placeholder
+    color: rgba(255, 255, 255, 0.61)
+    font-size: 18px
+.fancy-inner .textarea-input
+  overflow: visible
+.textarea-input
+  // overflow: hidden
+.handle-hide
+  height: 9px
+  width: 9px
+  position: absolute
+  background: rgb(79, 81, 122)
+  bottom: 0px
+  right: 0px
+  pointer-events: none
+  z-index: 2
+
+.txt-input .placeholder
+  color: rgba(0, 0, 0, 0.61)
+  position: absolute
+  top: 0
+  font-size: 18px
+  cursor: text
+  white-space: nowrap
+  font-weight: 500
+  left: 26px
+  font-weight: normal
+  user-select: none
+  line-height: 70px
+  transition: all 0.3s ease
+
+textarea .txt-input input:focus ~ .placeholder
+  transform: translate(0px, -23px) scale(1)
+  font-size: 12px
+  left: 26px
+
+.txt-input
+  input.is-active ~ .placeholder
+    transform: translate(0px, -23px) scale(1)
+    font-size: 12px
+    left: 24px
+  textarea
+    &:focus ~ .placeholder, &.is-active ~ .placeholder
+      transform: translate(0px, -23px) scale(1)
+      font-size: 12px
+      left: 24px
+  .placeholder-input
+    color: rgba(255, 255, 255, 0.61)
+    position: absolute
+    top: 0
+    font-size: 18px
+    cursor: text
+    white-space: nowrap
+    right: 24px
+    user-select: none
+    line-height: 48px
+    display: none
+    transition: all 0.3s ease
+  input.parsley-success ~ .placeholder-input
+    transform: translate(-5px, -12px) scale(1)
+    font-size: 12px
+    color: #2c870c
+    right: 4px
+    display: inline-block
+.parsley-errors-list.filled
+  position: absolute
+  top: 0px
+  width: 215px
+  height: 70px
+  z-index: 1
+  padding-left: 48px
+  box-sizing: border-box
+  background-color: #ea1414
+  border-radius: 5px
+  cursor: text
+  white-space: nowrap
+  // transform: translate(-5px, -12px) scale(1)
+  font-size: 16px
+  color: #fff
+  right: 0
+  display: inline-block
+  user-select: none
+  line-height: 48px
+  transition: all 0.3s ease
+  &::before
+    content: ' '
+    position: absolute
+    top: 16px
+    left: 16px
+    width: 17px
+    height: 17px
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="%23FFF" d="M8.1 0C3.649 0 0 3.649 0 8.1s3.649 8.1 8.1 8.1 8.1-3.649 8.1-8.1S12.551 0 8.1 0zM2.043 8.1c0-3.357 2.7-6.057 6.057-6.057 1.314 0 2.554.365 3.503 1.095l-8.465 8.465c-.73-.949-1.095-2.19-1.095-3.503zM8.1 14.157c-1.314 0-2.554-.365-3.503-1.095l8.465-8.465c.73.949 1.095 2.19 1.095 3.503 0 3.357-2.7 6.057-6.057 6.057z"/></svg>')
+    background-size: cover
+    background-repeat: no-repeat
+  .parsley-required, .parsley-type
+    max-width: 136px
+    padding-top: 13px
+    box-sizing: border-box
+    white-space: normal
+    line-height: normal
+
+.txt-input__textarea.txt-input__field.is-active.parsley-error ~ .handle-hide
+  bottom: 2px
+  right: 2px
+
+.parsley-error-list
+  color: red
+.txt-input__wrap-secondary
+  .placeholder
+    color: rgba(255, 255, 255, 0.61)
+.form-red .txt-input input.pasrley-error ~ .placeholder-input
+  transform: translate(0px, -23px) scale(1)
+  font-size: 12px
+  color: #fff
+  right: -10px
+  display: inline-block
+
+.input_error
+	border: 2px solid #c11717 !important
+	&::placeholder
+		color: #c11717
+// input
+// input file
+.file_upload
+  display: block
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  margin-right: 50px
+  color: #000
+  &:last-child
+    margin-right: 0
+  .button, > mark
+    display: inline-block
+    cursor: pointer
+.file_upload .button
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  height: 100%
+  z-index: 1
+  position: relative
+  cursor: pointer
+  font-size: 18px
+  line-height: 24px
+  vertical-align: middle
+
+.file_upload
+  .input-svg
+    background-repeat: no-repeat
+    -webkit-background-size: contain
+    background-size: contain
+    width: 16px
+    height: 20px
+    vertical-align: middle
+    display: inline-block
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="20"><path fill="#8A8A8A" fill-rule="evenodd" d="M15.905 8.946l-4.715 9.899a2.033 2.033 0 0 1-2.688.967l-7.334-3.381a1.99 1.99 0 0 1-.978-2.658L6.187 1.155a2.032 2.032 0 0 1 2.69-.967l4.582 2.113a1.99 1.99 0 0 1 .978 2.658l-4.286 8.993a2.033 2.033 0 0 1-2.689.967l-1.833-.845a1.99 1.99 0 0 1-.979-2.658l3.004-6.274a1.017 1.017 0 0 1 1.344-.484.996.996 0 0 1 .49 1.329l-2.576 5.368a.995.995 0 0 0 .488 1.329 1.016 1.016 0 0 0 1.345-.484l3.432-7.179a.996.996 0 0 0-.49-1.33l-2.75-1.268a1.016 1.016 0 0 0-1.344.484l-5.14 10.801a1 1 0 0 0 .492 1.335l5.491 2.532a1.021 1.021 0 0 0 1.35-.486l4.285-8.988a1.017 1.017 0 0 1 1.345-.484.995.995 0 0 1 .49 1.329"/></svg>')
+  > mark
+    background: transparent
+    cursor: pointer
+    padding-left: 1em
+  input[type=file]
+    position: absolute
+    cursor: pointer
+    top: 0
+    opacity: 0
+.file-block__container
+  margin-bottom: 30px
+  .file-block__heading
+    display: block
+  .file_upload
+    display: inline-block
+    margin-top: 10px
+    .button
+      &.active
+        .file_upload__hide
+        .icon-input-clear
+          display: inline-block
+    .file_upload__inner
+      .icon-input-clear
+        display: none
+        float: right
+        margin: 4px 0 0 8px
+    svg
+      vertical-align: middle
+      margin-right: 8px
+      fill: #8a8a8a

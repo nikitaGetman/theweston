@@ -1,0 +1,91 @@
+// Bootsrap-Select
+
+.dropdown-menu
+	position: relative
+	top: 100%
+	left: 0
+	z-index: 1000
+	display: none
+	float: left
+	min-width: 160px
+	padding: 5px 0
+	margin: 2px 0 0
+	list-style: none
+	background-color: #ffffff
+	border: 1px solid #cccccc
+	border: 1px solid rgba(0, 0, 0, 0.15)
+	border-radius: 4px
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175)
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175)
+	background-clip: padding-box
+
+.bootstrap-select
+	&:not([class*=col-]):not([class*=form-control]):not(.input-group-btn)
+	
+	.dropdown-toggle
+		width: 100%
+		padding-right: 12px !important
+		font-size: 16px
+		z-index: 1
+.input_block
+	height: 40px
+.input_block .dropdown-toggle
+	float: none
+	position: relative
+	padding: 0 10px 0 26px
+	width: 250px
+	max-width: 234px
+	height: 40px
+	border-radius: 20.5px
+	line-height: 40px
+	font-size: 16px
+	color: #000
+	background: #fff
+	border: 0
+	box-shadow: none
+	text-transform: none
+	outline: none
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn)
+	width: auto
+.caret
+	width: 18px
+	height: 11px
+	margin-top: -4px
+	border: 0
+	background-image: url('data:image/svg+xml;utf8,<svg width="12px" height="6px" viewBox="0 0 12 6" xmlns="http://www.w3.org/2000/svg"><path d="M2 0l4 4 4-4h2L6 6 0 0h2z" fill="%23595959" fill-rule="evenodd"/></svg>')
+	background-size: 12px 6px
+	background-repeat: no-repeat
+.open
+	.dropdown-toggle.btn-default
+		background: #fff
+.bootstrap-select
+	.dropdown-toggle:focus
+		outline: none !important
+	&.btn-group
+		.dropdown-toggle .caret
+			top: 50%
+			right: 12px
+			vertical-align: middle
+	.dropdown-menu
+		padding: 0 !important
+		li
+			position: relative
+			background-color: #fff
+			font-weight: 800
+			display: block
+			height: 30px
+			font-size: 14px
+			border-bottom: 1px solid #cecece
+			&:last-child
+				border-bottom: 0
+			a span.text
+				display: inline-block
+				font-weight: 600
+				font-size: 16px
+				transition: all 0.4s ease-out
+				&:hover
+					transition: all 0.4s ease-in
+		background-color: #fff
+		box-sizing: border-box
+		border-radius: 0
+		padding: 10px 0 0 0

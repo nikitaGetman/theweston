@@ -1,0 +1,190 @@
+.catalog-line--left
+	position: absolute
+	width: 160px
+	height: 100%
+	background-color: #5379B8
+	z-index: 6
+	transition: width .2s ease-out
+	&:hover
+		width: 174px
+		transition: width .2s ease-in
+	&__svg
+		fill: #fff
+	&__link
+		display: block
+		padding: 54px 57px
+		box-sizing: border-box
+		width: 100%
+		height: 100%
+	&__text
+		color: #fff
+		margin-top: 284px
+		position: absolute
+		left: 12px
+		display: block
+		font-size: 32px
+		font-weight: 500
+		transform: rotate(-90deg)
+.fancybox-inner
+	.form_close__right
+		position: absolute
+		z-index: 1
+		right: 57px
+		top: 50px
+		svg
+			fill: #000
+		.form_close--catalog
+			padding: 3px 0 0 3px
+			display: block
+			box-sizing: border-box
+			width: 40px
+			height: 40px
+.catalog-modal
+	display: none
+	width: 100%
+	height: 100%
+	padding: 0
+	margin: 0
+	.fancybox-close-small
+		display: none
+	.fancy,.fancy-inner
+		height: 100%
+	.form_close__left
+		width: 160px
+		height: 100%
+		background-color: #4F71AE
+		z-index: 2
+		position: absolute
+		left: 0
+		right: initial
+		.form_close--catalog
+			position: absolute
+			top: 50px
+			left: 50%
+			margin-left: -20px
+			display: block
+			padding: 3px 0 0 3px
+			box-sizing: border-box
+			width: 40px
+			height: 40px
+		.icon-form-close
+			fill: #fff
+	.catalog-double
+		padding: 0 0 0 160px
+		height: 100%
+		box-sizing: border-box
+		.catalog-heading
+			position: absolute
+			top: 0
+			left: 0
+			background-color: #6183BC
+			width: 100%
+			height: 54px
+			padding: 16px 0 16px 80px
+			box-sizing: border-box
+			a
+				display: inline-block
+				text-align: center
+				margin-right: 7%
+				font-size: 17px
+				color: #fff
+				font-weight: normal
+				&:last-child
+					margin-right: 0
+			svg
+				display: none
+				position: absolute
+				fill: #5479b8
+				transform: rotate(90deg)
+				left: 155px
+				bottom: -8px
+		&__list
+			padding-top: 53px
+			box-sizing: border-box
+		.search-modal, .modal-catalog
+			// padding-right: 20px
+			box-sizing: border-box
+			max-height: calc(100vh - 180px)
+			.simplebar-track
+				right: 11px
+				&.horizontal
+					display: none
+		.modal-catalog
+			margin-left: -35px
+			margin-top: -14px
+			&__item
+				padding-left: 35px
+				padding-top: 14px
+				box-sizing: border-box
+				margin-bottom: 20px
+			&__head
+				margin-bottom: 25px
+				a
+					position: relative
+					span
+						font-size: 30px
+						position: relative
+						z-index: 1
+						vertical-align: middle
+						font-weight: 500
+						color: #fff
+					&.active,&:hover
+						&::before
+							content: ' '
+							transition: all .2s ease
+							position: absolute
+							left: -30px
+							top: -15px
+							width: 100%
+							height: 100%
+							padding: 17px 30px
+							border-radius: 35.5px
+							background-color: #000
+			&__subheadings
+				padding-left: 30px
+				box-sizing: border-box
+				a
+					display: inline-block
+					margin-right: 20px
+					color: rgba(255, 255, 255, 0.8)
+					font-size: 18px
+					margin-bottom: 20px
+		&__left, &__right
+			position: relative
+			padding-top: 16px
+			box-sizing: border-box
+			vertical-align: top
+			width: 50%
+			// width: calc(50% - 160px)
+			height: 100%
+			display: inline-block
+		&__left
+			margin-right: -4px
+			padding-top: 54px
+			padding-left: 83px
+			box-sizing: border-box
+			background-color: #5379B8
+		&__right
+			padding-top: 91px
+			padding-left: 87px
+			background-color: #e5e9f0
+			.search-modal
+				&__item
+					margin-bottom: 68px
+				h3
+					font-size: 30px
+					font-weight: 500
+					line-height: normal
+					margin: 0 0 26px 0
+				.txt-input
+					max-width: 434px
+					width: 100%
+					display: inline-block
+					margin-bottom: 17px
+					margin-right: 21px
+				.btn
+					display: inline-block
+					height: 70px
+					line-height: 70px
+					vertical-align: top
+					width: 140px
