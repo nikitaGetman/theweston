@@ -153,10 +153,10 @@ p
 
 @keyframes dot
   50%
-	    transform: translateX(96px)
+		transform: translateX(96px)
 @keyframes dots
   50%
-	    transform: translateX(-31px)
+		transform: translateX(-31px)
 
 header,main,footer
 	box-sizing: border-box
@@ -1165,9 +1165,13 @@ header
 		right: 148px
 		svg
 			fill: #fff
+			opacity: .5
 		a
 			display: inline-block
 			margin-right: 31px
+			&:hover
+				svg
+					opacity: 1
 			&:last-child
 				margin-right: 0
 	.footer-contacts
