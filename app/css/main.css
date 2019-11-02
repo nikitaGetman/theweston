@@ -5436,7 +5436,9 @@ header {
     width: 100%; }
   .page-column-container .page-column-text p {
     width: 100%;
-    margin: 40px 0; } }
+    margin: 40px 0; }
+  .footer-container.contacts-map .footer-left {
+    padding-left: 10%; } }
 
 @media screen and (max-width: 800px) {
   .articles-slide__item {
