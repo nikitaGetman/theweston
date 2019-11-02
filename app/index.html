@@ -42,15 +42,15 @@
 					</a>
 				</div>
 			</div>
-<!-- 			<div class="header-sm">
+			<div class="header-sm">
 				<ul>
-					<li class="header-sm__phone-container">
+					<!-- <li class="header-sm__phone-container">
 						<a href="tel:83912699957" class="header-sm__phone">
 							<svg class="icon-phone-hidden" width='41px' height='33px'>
 								<use xlink:href="svg.svg#icon-phone-hidden"></use>
 							</svg>
 						</a>
-					</li>
+					</li> -->
 					<li class="header-sm__burger">
 						<a data-fancybox="" data-src="#menu-sm" href="javascript:;">
 							<svg class="icon-burger" width='41px' height='33px'>
@@ -59,7 +59,7 @@
 						</a>
 					</li>
 				</ul>
-			</div> -->
+			</div>
 			<ul class="header-main-links">
 				<li><a href="#" class="active">Главная</a></li>
 				<li><a href="#">Услуги</a></li>
@@ -131,12 +131,16 @@
 			    // animateOut: 'fadeOut',
 			    // animateIn: 'slideInRight',
 			    loop: true,
-			    // autoplay: true,
+			    items:1,
 			    stagePadding: 140,
 			    margin: 0,
 			    dots: true,
 			    nav: false,
 			    responsive:{
+					0:{
+						items:1,
+						stagePadding: 70,
+					},
 			        1285:{
 						items:1,
 						stagePadding: 70,
@@ -892,6 +896,53 @@
 		</div>
 	</div>
 </footer>
+<div id="menu-sm" class="popup_header_callback call-back__modal menu-modal">
+    <div class="fancy">
+        <div class="form_close">
+            <a href="javascript:;" class="form_close__btn">
+                <svg class="icon-fancy-close" width="41px" height="41px">
+                    <use xlink:href="/bitrix/templates/festival/svg.svg#icon-fancy-close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="fancy-inner">
+            <div class="header-bottom">
+                <ul class="header-main-links">
+                    <li class="submenu-link submenu-href js-fancy-submenu">
+                        <a href="/festival/" class="js-fancy-link--open">
+                            <svg class="icon-fest" width="29px" height="30px">
+                                <use xlink:href="/bitrix/templates/festival/svg.svg#icon-fest"></use>
+                            </svg>
+                            Фестиваль </a>
+                        <ul class="submenu line-bg--down line-bg--up">
+
+                            <li><a href="/festival/o-festivale/">О фестивале</a></li>
+
+                            <li><a href="/festival/programma-festivalya/">Программа фестиваля</a></li>
+
+                            <li><a href="/festival/istoriya/">История</a></li>
+
+                            <li><a href="/festival/polozhenie-i-dokumenty/">Положение и документы</a></li>
+
+                            <li><a href="/festival/novosti/">Новости</a></li>
+
+                            <li><a href="/festival/ploshchadki-festivalya/"> Площадки фестиваля</a></li>
+
+                            <li><a href="/festival/kak-dobratsya/">Как добраться</a></li>
+
+                            <li><a href="/festival/byt-na-festivale/">Быт на фестивале</a></li>
+
+                            <li><a href="/festival/ekspertnyy-sovet/"> Экспертный совет</a></li>
+
+                            <li><a href="/festival/virtualnyy-tur/">Виртуальный тур</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- скрипт карты -->
 <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXjBNHEOJ1iVikr076vYZJQ5M4PYJKN0E&callback=initMap"></script>
 </html>
